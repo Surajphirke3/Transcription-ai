@@ -1,10 +1,16 @@
 import React from "react";
 import * as ReactDOM from "react-dom/client";
 import { Button } from "./components/ui/button";
+import { NavigationMenuDemo } from "./components/navbar";
+// import { CarouselSize } from "./components/carouselm";
 
 const App = () => (
+  <div className="flex flex-col items-center mt-4 justify-center min-h-screen bg-gray-50">
+    <NavigationMenuDemo />
+ 
   <div className="flex items-center justify-center min-h-screen bg-gray-100">
     <div className="text-center mx-10">
+      
       <h1 className="text-4xl font-bold text-gray-800">
         🚀 Electron React Tailwind Typescript Starter
       </h1>
@@ -18,6 +24,7 @@ const App = () => (
         hello world
       </Button>
     </div>
+  </div>
   </div>
 );
 
